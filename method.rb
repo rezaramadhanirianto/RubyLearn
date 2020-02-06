@@ -69,3 +69,4 @@ def setArray(itemA, itemB, itemC)
 end
 arr1 = ['barang', 'Thing', 'Device']
 setArray(*arr1)
+
