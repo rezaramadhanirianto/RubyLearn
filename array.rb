@@ -101,9 +101,50 @@ looparray.each do |i|
     puts "Item : #{i}"
 end
 # #reverse Looping
-# 5.downto(0) do |x|
-#     puts 
-# end
+5.downto(0) do |x|
+    puts arr[x]
+end
 
 new_arr = %w(satu dua tiga empat lima)
 puts new_arr
+
+puts "============================="
+arr = [1,2,3,4,5]
+puts "#{arr.shuffle}"
+
+# Looping array dengan while
+total = 0
+while total < arr.length
+    puts arr[total]
+    total += 1
+end
+
+puts "=============================="
+arr2 = [1,2,3,4,5]
+for item in arr2
+    puts item
+end
+
+puts "========================================"
+arr2.map do |item|
+    puts item
+end
+
+array = [70, 60, 80, 90, 100, 65]
+arrayBaru = []
+
+array.each do |item|
+    if item >= 70
+        arrayBaru << item #Push
+    end
+end
+puts arrayBaru
+
+puts "============================================"
+#SElect
+arrayBaru = array.select do |item|
+    item < 100
+end
+puts "#{arrayBaru}"
+#One Line Select
+puts "#{array.select {|item| item < 100}}"
