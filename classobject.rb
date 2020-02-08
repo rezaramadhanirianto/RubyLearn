@@ -49,3 +49,14 @@ printer = Print.new("Saya sedang mendalami getter -setter")
 printer.print
 puts"=================================="
 
+class Print
+    def initialize(text)
+        @text = text
+    end
+    def text = (kalimat)
+        @text = kalimat
+    end
+    def text
+        @text
+    end
+end
