@@ -13,5 +13,5 @@ puts 1 + 2 - 3 /4.0
 puts 1 * (2 - 3) / 4.0
 puts 1 ** 2 - (3 / 4.0)
 
-puts 15.even?
-puts 16.odd?
+puts 15.even? #cek Genap
+puts 16.odd?#cek ganjil

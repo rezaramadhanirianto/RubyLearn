@@ -19,7 +19,7 @@ puts "kata - kata mutiara".sub('kata', "mutiara").reverse
 puts "kata - kata mutiara".gsub('kata', "mutiara")
 
 #Strip
-#funsi menghilangkan spasi di samping kata
+#fungsi menghilangkan spasi di samping kata
 pass = "       password         ".strip
 puts pass
 

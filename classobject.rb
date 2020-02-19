@@ -67,7 +67,8 @@ class Print
     attr_reader :text #getter
 
     def initialize(text)
-        @text = text
+        # @text = text
+        @teks = text
     end
     def text=(text)
         @text = text
@@ -77,6 +78,38 @@ class Print
         @text
     end
     def print
+        # puts "mencetak : #{@text}"
+        puts "mencetak : #{@teks}"
+    end
+end
+
+printer = Print.new("Saya sedang belajar ruby")
+printer.print
+printer.text = "TExt kedua"
+printer.print
+printer.text = "TExt kedua edit"
+puts printer.print
+
+puts "=================================="
+
+class Print 
+    # attr_accessor :text
+    # attr_writer :text #setter
+    attr_reader :text #getter
+
+    def initialize(text)
+        # @text = text
+        @text = text
+    end
+    def text=(text)
+        @text = text.upcase
+    end
+    #getter
+    # def text
+    #     @text
+    # end
+    def print
+        # puts "mencetak : #{@text}"
         puts "mencetak : #{@text}"
     end
 end
