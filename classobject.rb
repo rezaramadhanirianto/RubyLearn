@@ -406,6 +406,7 @@ class FacebookConnection < ApiConnection
     end    
 end
 
+
 puts FacebookConnection.version #Klo pake self untuk akses variablenya gk perlu pake new kecuali parentnya ex : ApiConnection
 puts FacebookConnection.status
 

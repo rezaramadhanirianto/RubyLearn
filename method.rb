@@ -50,7 +50,7 @@ end
 puts pembagian[5, 1]
 puts pembagian.call(5, 1)
 
-#Splat Method
+#    Method
 def menu(*item)
     puts item[3]
     puts item[2]
