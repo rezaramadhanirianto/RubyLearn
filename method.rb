@@ -62,11 +62,7 @@ menu(array1)
 menu("siapa","rumah","lokasi","disana")
 
 #set Array Parameter
-def setArray(itemA, itemB, itemC)
-    puts itemB
-    puts itemA
-    puts itemC
-end
+ 
 arr1 = ['barang', 'Thing', 'Device']
 setArray(*arr1)
 

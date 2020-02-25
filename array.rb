@@ -62,7 +62,7 @@ arr3.delete_if {|item| item == "B"}
 puts "____________________"
 puts arr3
 
-#JOin
+#JOzin
 puts [1,2,3,4,5].join(",")
 puts [1,2,3,4,5].join()
 puts [1,2,3,4,5].join("A")

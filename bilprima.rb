@@ -5,10 +5,12 @@ arr = []
         nilai = i % x
         if(nilai == 0)
             a += 1
-        end
+        end 
     end 
     if(a == 2)
         arr.push(i)
     end 
 end     
 puts arr
+
+# a = Jumlah bilangan yg bisa modulus i sampe 0
