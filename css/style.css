@@ -1,0 +1,76 @@
+
+body {
+    /* background-color: red; */
+    animation: warna 2s infinite;/* <--- and here */
+}
+.forflex{
+     align-items: center;
+     display: flex; /*FLex lebih kuat dari block */
+     /* align-items: center;   Cara membuat item mid vertical */
+}
+.context{
+    background-color: royalblue;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    color: white;
+    font-size: x-large;
+    margin: 10px;
+}
+.symbol:hover{
+    /* animation: animasi 5s infinite 2s; */
+    background-color: aqua;    
+}
+.symbol{
+    animation: animasi 5s infinite 2s;
+    background-color: black;
+    /* border-radius: 100%; */
+    height: 10px;
+    width: 40px;
+    position: relative;
+    
+}
+/* .symbol::before{
+    content: '';
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+} */
+ /* @-webkit-keyframes animasi{
+    0%   {top:0px;}
+    25%  {top:200px;}
+    50%  {top:100px;}
+    75%  {top:200px;}
+    100% {top:0px;}
+}
+@keyframes board{
+    0%{
+        right : -500px
+    }
+    25%{
+        right : 0px
+    }
+    50%{
+        right : 500px
+    }
+    75%{
+        right : 0px
+    }
+    100%{
+        right : -500px
+    }
+} */
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
+}
+.sidebar{
+    width: 100px;
+    height: 100vh;
+    background-color: blueviolet;
+}

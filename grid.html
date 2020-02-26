@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTMl</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+            background-color: lightblue;
+            height: 100px;
+            grid-area: head;
+        }
+        .sidebar{
+            background-color: lightcoral;
+            /* width: 100px; */
+            height: calc(100vh - 100px);
+            grid-area: side;
+        }
+        .content{
+            width: 100%;
+            height: calc(100vh - 100px);
+            background: lightgreen;
+            grid-area: content;
+        }
+        .forgrid{
+            display: grid;
+            grid-template-columns: 200px auto;
+            grid-template-rows: "auto auto";
+            grid-template-areas: "head head" "side content";
+        }
+        .card{
+            width: 100px;
+            height: 100px;
+            border: lightslategray 1px solid;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .lightblue{
+            background-color: lightblue;
+        }
+        @media screen and (max-width: 1000px){
+            .header{
+                width: 100%;
+                /* background-color: rgb(255, 38, 0); */
+                height: 100px;
+            }
+            .sidebar{
+                /* background-color: rgb(128, 0, 11); */
+                width: 100%;
+                height: 50px;
+            }
+            .content{
+                width: 100%;
+                height: calc(100vh - 100px);
+                /* background: rgb(190, 54, 0); */
+            }
+            .forgrid{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: "100px auto 100px";
+                grid-template-areas: "head" "content" "side";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="forgrid">
+        <div class="header"></div>
+        <div class="sidebar"></div>
+        <div class="content">
+            <div class="container">
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
