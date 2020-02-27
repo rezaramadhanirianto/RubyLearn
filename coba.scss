@@ -1,0 +1,22 @@
+$primary-color:red;
+$default-pad: 10px;
+$default-border: 0px;
+$default-green: green;
+$primary-text: '';
+@for $i from 1 through 10 {
+    $default-border: $i + px
+}
+@if($primary-color == blue){
+    $primary-text: italic
+}else{
+    $primary-text: bold
+}
+body{
+    background-color: $primary-color;
+    padding: $default-pad;
+    margin: $default-border;
+    font-style: $primary-text;
+}
+.default-green{
+    background-color: $default-green;
+}

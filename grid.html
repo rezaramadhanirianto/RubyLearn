@@ -9,22 +9,26 @@
         body{
             margin: 0;
             padding: 0;
+            height: 200vh;
         }
         .header{
             width: 100%;
             background-color: lightblue;
             height: 100px;
             grid-area: head;
+            position: fixed;
         }
         .sidebar{
+            margin-top: 100px;
             background-color: lightcoral;
             /* width: 100px; */
             height: calc(100vh - 100px);
             grid-area: side;
         }
         .content{
+            margin-top: 100px;
             width: 100%;
-            height: calc(100vh - 100px);
+            height: auto;
             background: lightgreen;
             grid-area: content;
         }
@@ -47,6 +51,12 @@
         }
         .lightblue{
             background-color: lightblue;
+        }
+        .card:first-child{
+            background-color: lightcoral !important;
+        }
+        .card:first-of-type{
+            background-color: lightcoral;
         }
         @media screen and (max-width: 1000px){
             .header{
@@ -78,6 +88,28 @@
         <div class="header"></div>
         <div class="sidebar"></div>
         <div class="content">
+            <div class="container">
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+                <div class="card lightblue">
+                    
+                </div>
+            </div>
             <div class="container">
                 <div class="card lightblue">
                     
